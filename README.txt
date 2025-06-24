@@ -1,25 +1,23 @@
-Hallo Herr Prof. Haase,
+Diese Anwendung entstand im Rahmen eines Hochschulprojekts an der HTW Dresden. Ziel ist die Simulation und Visualisierung eines chemischen Prozesses (2A->B) welcher  in einem fiktiven Festbettreaktor abläuft.
 
-Ich hab selbst noch nicht mit Jupyter Notebook gearbeitet habe ihnen aber mal die Notebook Datei erstellt. Es funktioniert wahrscheinlich nur mit der richtigen Desktop Anwendung von Jupyter (ich konnte nicht das gesamte Projekt in die Browserbasierte Variante laden)
-Darüber sollte man wenn man die 2 Zeilen ausführt folgendes bekommen (kann möglicherweise ein paar Sekunden dauernd um die Module zu indexen und zu konfigurieren):
-- mein UserInterface direkt in JupyterNotebook (jedenfalls passiert das bei mir so)
-- einen Link in der Ausgabekonsole von Jupyter (bei mir direkt über dem UI) dass sollte in etwas so aussehen:
-* Running on local URL:  http://127.0.0.1:7860
-* To create a public link, set `share=True` in `launch()`.
-wenn sie auf den Link gehen sollte sich ihr Browser öffnen mit dem UI, ich vermute das läuft etwas stabiler als die Variante in Jupyter. 
+Bedienung
 
-Falls das gar nicht funktioniert, könnten sie noch python 3.12 rein installieren und es über die Konsole ausführen, es sollte aber mit Jupyter laufen. 
-Falls das Programm Fehlermeldungen produziert liegt es vermutlich am Export des Enviroments, schreiben sie mir in dem Fall gern.
+Die Anwendung ist für die Nutzung in Jupyter Lab konzipiert. Nach dem Start des Notebooks kann das User Interface (UI) direkt in Jupyter erscheinen. Alternativ wird in der Jupyter-Konsole ein lokaler Link ausgegeben (z.B. http://127.0.0.1:7860), über den das UI im Browser geöffnet werden kann. Die Nutzung im Browser ist meist stabiler.
 
-----UserInterface-----
+Ablauf:
 
-Im UI ist ein Button mit "Simulation starten", wenn man die Ausgangsparameter im UI ändert muss man da clicken um die Diagramme zu updaten.
+    Notebook öffnen und die vorgesehenen Zellen ausführen.
+    Nach kurzer Ladezeit erscheint das User Interface entweder direkt in Jupyter oder es wird ein Link angezeigt.
 
-Die Parameter in der obersten Zeile sind ja laut idealer Gasgleichung voneinader abhängig, man kann daneben im Dropdown den Parameter auswählen, 
-den man selbst nicht verändert und dann die anderen beiden beliebig setzen, die simulation berechnet dann den dritten Parameter.
+    Im User Interface stehen die wichtigsten Funktionen bereit:
 
-Ansonsten ist es hoffe ich selbsterklärend, falls nicht geben sie mir da auch gern eine Rückmeldung, da kann die eigene Einschätzung ja schnell täuschen wenn man es selbst baut.
+    Mit dem Button „Simulation starten“ werden die Diagramme aktualisiert.
 
-Vielen Dank für ihre Zeit und Flexibilität!
+    Die Ausgangsparameter können beliebig gesetzt werden. Im Dropdown lässt sich angeben, welcher der drei Parameter automatisch berechnet werden soll (gemäß idealer Gasgleichung). 
+    Die anderen beiden können manuell   verändert werden; das Programm berechnet daraufhin den Dritten automatisch.
 
-Mit freundlichen Grüßen, Joe Leonhardt
+    Parameter anpassen, Simulation starten:
+    Änderungen an den Parametern werden erst nach Klick auf „Simulation starten“ übernommen und visualisiert.
+
+
+Rückmeldungen zur Benutzerfreundlichkeit sind willkommen.
